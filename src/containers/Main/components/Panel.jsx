@@ -32,6 +32,22 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     })
   }
 
+  const renderShareButton = (
+    <div>
+      <Button variant="contained" color="primary" onClick={shareInfo}>
+        Compartilhar
+      </Button>
+    </div>
+  )
+
+  const renderCopyButton = (
+    <div>
+      <Button variant="contained" color="primary" onClick={copyInfo}>
+        Copiar
+      </Button>
+    </div>
+  )
+
   return (
     <Card>
       <CardPanelContentStyled>
@@ -45,7 +61,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
             </Select>
           </div>
         </div>
-
+        {navigatorHasShare ? renderShareButton : renderCopyButton}
       </CardPanelContentStyled>
     </Card>
   )
