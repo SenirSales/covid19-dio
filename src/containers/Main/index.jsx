@@ -26,7 +26,7 @@ function Main() {
   return (
     <ContainerStyled>
       <div className="mb-2">
-      <Panel
+        <Panel
           data={data}
           updateAt={updateAt}
           onChange={handleChange}
@@ -34,6 +34,7 @@ function Main() {
           getCovidData={getCovidData}
         />          
       </div>
+     
       <Board data={data} />
       
     </ContainerStyled>
