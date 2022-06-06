@@ -1,4 +1,4 @@
-# Academia-Digital
+# COVID19
 ### Desafio - Desenvolvendo uma Progressive Web Application com React para mapear os dados do COVID19 pelo mundo
 
 Descrição:
